@@ -14,11 +14,11 @@ class User extends CI_Controller
         $data['judul'] = 'Profil Saya';
         $data['user'] = $this->ModelUser->cekData(['email' => $this->session->userdata('email')])->row_array();
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('templates/sidebar', $data);
-        $this->load->view('templates/topbar', $data);
+        $this->load->view('templates1/header', $data);
+        $this->load->view('templates1/sidebar', $data);
+        $this->load->view('templates1/topbar', $data);
         $this->load->view('user/index', $data);
-        $this->load->view('templates/footer');
+        $this->load->view('templates1/footer');
     }
 
     public function anggota()
@@ -28,11 +28,11 @@ class User extends CI_Controller
         $this->db->where('role_id', 1);
         $data['anggota'] = $this->db->get('user')->result_array();
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('templates/sidebar', $data);
-        $this->load->view('templates/topbar', $data);
+        $this->load->view('templates1/header', $data);
+        $this->load->view('templates1/sidebar', $data);
+        $this->load->view('templates1/topbar', $data);
         $this->load->view('user/anggota', $data);
-        $this->load->view('templates/footer');
+        $this->load->view('templates1/footer');
     }
 
     public function ubahProfil()
@@ -46,11 +46,11 @@ class User extends CI_Controller
 
 
         if ($this->form_validation->run() == false) {
-            $this->load->view('templates/header', $data);
-            $this->load->view('templates/sidebar', $data);
-            $this->load->view('templates/topbar', $data);
+            $this->load->view('templates1/header', $data);
+            $this->load->view('templates1/sidebar', $data);
+            $this->load->view('templates1/topbar', $data);
             $this->load->view('user/ubah-profile', $data);
-            $this->load->view('templates/footer');
+            $this->load->view('templates1/footer');
         } else {
             $nama = $this->input->post('nama', true);
             $email = $this->input->post('email', true);
@@ -76,7 +76,8 @@ class User extends CI_Controller
 
                     $gambar_baru = $this->upload->data('file_name');
                     $this->db->set('image', $gambar_baru);
-                } else { }
+                } else {
+                }
             }
 
             $this->db->set('nama', $nama);
@@ -110,11 +111,11 @@ class User extends CI_Controller
         ]);
 
         if ($this->form_validation->run() == false) {
-            $this->load->view('templates/header', $data);
-            $this->load->view('templates/sidebar', $data);
-            $this->load->view('templates/topbar', $data);
+            $this->load->view('templates1/header', $data);
+            $this->load->view('templates1/sidebar', $data);
+            $this->load->view('templates1/topbar', $data);
             $this->load->view('user/ubah-password', $data);
-            $this->load->view('templates/footer');
+            $this->load->view('templates1/footer');
         } else {
             $pwd_skrg = $this->input->post('password_sekarang', true);
             $pwd_baru = $this->input->post('password_baru1', true);

@@ -6,7 +6,7 @@ class Autentifikasi extends CI_Controller
     public function index()
     {
         //jika statusnya sudah login, maka tidak bisa mengakses halaman login alias dikembalikan ke tampilan user
-        if($this->session->userdata('email')){
+        if ($this->session->userdata('email')) {
             redirect('admin');
         }
 
@@ -21,9 +21,9 @@ class Autentifikasi extends CI_Controller
             $data['judul'] = 'Login';
             $data['user'] = '';
             //kata 'login' merupakan nilai dari variabel judul dalam array $data dikirimkan ke view aute_header
-            $this->load->view('templates/aute_header', $data);
+            $this->load->view('templates1/aute_header', $data);
             $this->load->view('autentifikasi/login');
-            $this->load->view('templates/aute_footer');
+            $this->load->view('templates1/aute_footer');
         } else {
             $this->_login();
         }
@@ -48,7 +48,11 @@ class Autentifikasi extends CI_Controller
                     ];
 
                     $this->session->set_userdata($data);
-                    redirect('admin');
+                    if ($user['role_id'] == '1') {
+                        redirect('admin');
+                    } else if ($user['role_id'] == '2') {
+                        redirect('home');
+                    }
                 } else {
                     $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-message" role="alert">Password salah!!</div>');
                     redirect('autentifikasi');
@@ -98,13 +102,14 @@ class Autentifikasi extends CI_Controller
         //diinput akan disimpan ke dalam tabel user
         if ($this->form_validation->run() == false) {
             $data['judul'] = 'Registrasi Member';
-            $this->load->view('templates/aute_header', $data);
+            $this->load->view('templates1/aute_header', $data);
             $this->load->view('autentifikasi/registrasi');
-            $this->load->view('templates/aute_footer');
+            $this->load->view('templates1/aute_footer');
         } else {
             $email = $this->input->post('email', true);
             $data = [
                 'nama' => htmlspecialchars($this->input->post('nama', true)),
+                'alamat' => htmlspecialchars($this->input->post('alamat', true)),
                 'email' => htmlspecialchars($email),
                 'image' => 'default.jpg',
                 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
@@ -124,9 +129,8 @@ class Autentifikasi extends CI_Controller
     {
         $this->session->unset_userdata('email');
         $this->session->unset_userdata('role_id');
-
-        $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-message" role="alert">Anda telah logout!!</div>');
-        redirect('autentifikasi');
+        $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-message" role="alert">Anda telah logout!!</div>');
+        redirect('home');
     }
 
     public function blok()

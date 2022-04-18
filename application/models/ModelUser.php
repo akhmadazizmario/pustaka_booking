@@ -18,6 +18,12 @@ class ModelUser extends CI_Model
         return $this->db->get_where('user', $where);
     }
 
+    public function get_where()
+    {
+        return $this->db->get_where('user');
+    }
+
+
     public function cekUserAccess($where = null)
     {
         $this->db->select('*');
@@ -34,4 +40,11 @@ class ModelUser extends CI_Model
         return $this->db->get();
     }
 
+    public function joinKategoriBuku($where)
+    {
+        $this->db->from('buku');
+        $this->db->join('kategori', 'kategori.id = buku.id_kategori');
+        $this->db->where($where);
+        return $this->db->get();
+    }
 }

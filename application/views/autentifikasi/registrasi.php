@@ -15,6 +15,10 @@
                                   <?= form_error('nama', '<small class="text-danger pl-3">', '</small>'); ?>
                               </div>
                               <div class="form-group">
+                                  <input type="text" class="form-control form-control-user" id="alamat" name="alamat" placeholder="alamat" value="<?= set_value('alamat'); ?>">
+                                  <?= form_error('alamat', '<small class="text-danger pl-3">', '</small>'); ?>
+                              </div>
+                              <div class="form-group">
                                   <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Alamat Email" value="<?= set_value('email'); ?>">
                                   <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
                               </div>

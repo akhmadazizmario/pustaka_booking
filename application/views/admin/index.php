@@ -4,7 +4,7 @@
   <!-- row ux-->
   <div class="row">
     <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-left-danger shadow h-100 py-2 bg-primary">
+      <div class="card border-left-danger shadow h-100 py-2 bg-success">
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
@@ -42,7 +42,7 @@
     </div>
 
     <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-left-success shadow h-100 py-2 bg-danger">
+      <div class="card border-left-success shadow h-100 py-2 bg-primary">
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
@@ -64,7 +64,7 @@
     </div>
 
     <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-left-warning shadow h-100 py-2 bg-success">
+      <div class="card border-left-warning shadow h-100 py-2 bg-info">
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
@@ -93,8 +93,8 @@
   <!-- row table-->
   <div class="row">
     <div class="table-responsive table-bordered col-sm-5 ml-auto mr-auto mt-2">
-      <div class="page-header">
-        <span class="fas fa-users text-primary mt-2 "> Data User</span>
+      <div class="page-header ">
+        <span class="fas fa-users text-black mt-2 "> Data User</span>
         <a class="text-danger" href="<?php echo base_url('user/data_user'); ?>"><i class="fas fa-search mt-2 float-right"> Tampilkan</i></a>
       </div>
       <table class="table mt-3">
