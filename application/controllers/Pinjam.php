@@ -4,6 +4,8 @@ class Pinjam extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        $this->load->helper(array('url'));
+        $this->load->model('modelPinjam');
         cek_login();
     }
     public function index()
@@ -55,8 +57,8 @@ class Pinjam extends CI_Controller
             'id_booking' => $id_booking,
             'tgl_pinjam' => $tglsekarang,
             'id_user' => $bo->id_user,
-            'tgl_kembali' => date('Y-md', strtotime('+' . $lama . ' days', strtotime($tglsekarang))),
-            'tgl_pengembalian' => '0000-00-00',
+            'tgl_kembali' => date('Y-m-d', strtotime('+' . $lama . ' days', strtotime($tglsekarang))),
+            'tgl_pengembalian' => date('Y-m-d', strtotime('+30 days', strtotime($tglsekarang))),
             'status' => 'Pinjam',
             'total_denda' => 0
         ];
@@ -80,11 +82,11 @@ class Pinjam extends CI_Controller
         $no_pinjam = $this->uri->segment(4);
         $where = ['id_buku' => $this->uri->segment(3),];
         $tgl = date('Y-m-d');
-        $status = 'Kembali';
+        $status = 'kembali';
         //update status menjadi kembali pada saat buku dikembalikan
         $this->db->query("UPDATE pinjam, detail_pinjam SET pinjam.status='$status', pinjam.tgl_pengembalian='$tgl' WHERE detail_pinjam.id_buku='$id_buku' AND pinjam.no_pinjam='$no_pinjam'");
         //update stok dan dipinjam pada tabel buku
-        $this->db->query("UPDATE buku, detail_pinjam SET buku.dipinjam=buku.dipinjam1, buku.stok=buku.stok+1 WHERE buku.id=detail_pinjam.id_buku");
+        $this->db->query("UPDATE buku, detail_pinjam SET buku.dipinjam=buku.dipinjam+1, buku.stok=buku.stok+1 WHERE buku.id=detail_pinjam.id_buku");
         $this->session->set_flashdata('pesan', '<div class="laert alertmessage alert-success" role="alert"></div>');
         redirect(base_url('pinjam'));
     }

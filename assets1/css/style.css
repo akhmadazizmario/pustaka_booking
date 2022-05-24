@@ -397,13 +397,12 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 75vh;
-  background: url("../img/hero-bg.jpg") top left;
+  background-image: url("http://localhost/pustaka-booking/assets1/img/background.jpg");
   background-size: cover;
   position: relative;
 }
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -425,7 +424,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #106eea;
 }
 #hero h2 {
-  color: #555555;
+  color: #0d58ba;
   margin: 5px 0 30px 0;
   font-size: 24px;
   font-weight: 400;
@@ -440,7 +439,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 28px;
   border-radius: 4px;
   transition: 0.5s;
-  color: #fff;
+  color: black;
   background: #106eea;
 }
 #hero .btn-get-started:hover {

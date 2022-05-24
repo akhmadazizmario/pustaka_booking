@@ -10,12 +10,6 @@ class ModelBooking extends CI_Model
         $this->db->where($where);
         return $this->db->get($table);
     }
-
-    public function get_where()
-    {
-        return $this->db->get_where('booking');
-    }
-
     public function getOrderByLimit($table, $order, $limit)
     {
         $this->db->order_by($order, 'desc');
@@ -33,7 +27,7 @@ class ModelBooking extends CI_Model
     }
     public function simpanDetail($where = null)
     {
-        $sql = "INSERT INTO booking_detail (id_booking,id_buku) SELECT booking.id_booking,temp.id_buku FROM booking, temp WHERE temp.id_user= booking.id_user AND booking.id_user='$where'";
+        $sql = "INSERT INTO booking_detail (id_booking,id_buku) SELECT booking.id_booking,temp.id_buku FROM booking, temp WHERE temp.id_user=booking.id_user AND booking.id_user='$where'";
         $this->db->query($sql);
     }
     public function insertData($table, $data)

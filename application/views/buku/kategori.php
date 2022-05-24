@@ -1,6 +1,15 @@
 <!-- Begin Page Content -->
-<div class="container-fluid">
-
+<div class="pagetitle">
+    <h1><?= $judul; ?></h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active"><?= $judul; ?></li>
+        </ol>
+    </nav>
+</div><!-- End Page Title -->
+<hr>
+<section class="section dashboard">
     <?= $this->session->flashdata('pesan'); ?>
     <div class="row">
         <div class="col-lg-3">
@@ -28,8 +37,8 @@
                             <th scope="row"><?= $a++; ?></th>
                             <td><?= $k['kategori']; ?></td>
                             <td>
-                                <a href="<?= base_url('buku/ubahkategori/') . $k['id']; ?>" class="badge badge-info"><i class="fas fa-edit"></i> Ubah</a>
-                                <a href="<?= base_url('buku/hapuskategori/') . $k['id']; ?>" onclick="return confirm('Kamu yakin akan menghapus <?= $judul . ' ' . $k['kategori']; ?> ?');" class="badge badge-danger"><i class="fas fa-trash"></i> Hapus</a>
+                                <a href="<?= base_url('buku/ubahkategori/') . $k['id']; ?>" class="btn btn-info"><i class="fas fa-edit"></i> Ubah</a>
+                                <a href="<?= base_url('buku/hapuskategori/') . $k['id']; ?>" onclick="return confirm('Kamu yakin akan menghapus <?= $judul . ' ' . $k['kategori']; ?> ?');" class="btn btn-danger"><i class="fas fa-trash"></i> Hapus</a>
                             </td>
                         </tr>
                     <?php } ?>
@@ -38,34 +47,35 @@
         </div>
     </div>
 
-</div>
-<!-- /.container-fluid -->
+    </div>
+    <!-- /.container-fluid -->
 
-</div>
-<!-- End of Main Content -->
+    </div>
+    <!-- End of Main Content -->
 
-<!-- Modal Tambah kategori baru-->
-<div class="modal fade" id="kategoriBaruModal" tabindex="-1" role="dialog" aria-labelledby="kategoriBaruModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="kategoriBaruModalLabel">Tambah Kategori</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <form action="<?= base_url('buku/kategori'); ?>" method="post">
-                <div class="modal-body">
-                    <div class="form-group">
-                        <input type="text" name="kategori" id="kategori" placeholder="Masukkan Nama Kategori" class="form-control form-control-user">
+    <!-- Modal Tambah kategori baru-->
+    <div class="modal fade" id="kategoriBaruModal" tabindex="-1" role="dialog" aria-labelledby="kategoriBaruModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="kategoriBaruModalLabel">Tambah Kategori</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="<?= base_url('buku/kategori'); ?>" method="post">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input type="text" name="kategori" id="kategori" placeholder="Masukkan Nama Kategori" class="form-control form-control-user">
+                        </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-ban"></i> Close</button>
-                    <button type="submit" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Tambah</button>
-                </div>
-            </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-ban"></i> Close</button>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Tambah</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
+</section>
 <!-- End of Modal Tambah Mneu -->

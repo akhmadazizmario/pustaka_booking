@@ -1,86 +1,96 @@
-        <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
 
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-book"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">Pustaka Booking</div>
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+        <li class="nav-item">
+            <a class="nav-link " href="<?= base_url('admin'); ?>">
+                <i class="bi bi-grid"></i>
+                <span>Dashboard</span>
             </a>
+        </li><!-- End Dashboard Nav -->
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
+        <li class="nav-heading">profil</li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="<?= base_url('user'); ?>">
+                <i class="bi bi-person"></i>
+                <span>profil</span>
+            </a>
+        </li><!-- End Profile Page Nav -->
+
+        <li class="nav-heading">buku</li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="<?= base_url('buku/kategori'); ?>">
+                <i class="bi bi-border-style"></i>
+                <span>kategori buku</span>
+            </a>
+        </li><!-- End Profile Page Nav -->
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="<?= base_url('buku'); ?>">
+                <i class="bi bi-book"></i>
+                <span>Data Buku</span>
+            </a>
+        </li><!-- End F.A.Q Page Nav -->
+
+        <li class="nav-heading">menu</li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="<?= base_url('user/anggota'); ?>">
+                <i class="bi bi-person-lines-fill"></i>
+                <span>Data Anggota</span>
+            </a>
+        </li><!-- End Contact Page Nav -->
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="<?= base_url('pinjam'); ?>">
+                <i class="bi bi-card-list"></i>
+                <span>Data Peminjaman</span>
+            </a>
+        </li><!-- End Register Page Nav -->
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="<?= base_url('pinjam/daftarBooking'); ?>">
+                <i class="bi bi-file-ruled"></i>
+                <span>Data Booking</span>
+            </a>
+        </li><!-- End Login Page Nav -->
+
+        <li class="nav-heading">laporan</li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="<?= base_url('laporan/laporan_buku'); ?>">
+                <i class="bi bi-clipboard"></i>
+                <span>Laporan Data Buku</span>
+            </a>
+        </li><!-- End Error 404 Page Nav -->
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="<?= base_url('laporan/laporan_anggota'); ?>">
+                <i class="bi bi-clipboard"></i>
+                <span>Laporan Data Anggota</span>
+            </a>
+        </li><!-- End Blank Page Nav -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="<?= base_url('laporan/laporan_pinjam'); ?>">
+                <i class="bi bi-clipboard"></i>
+                <span>Laporan Data Peminjaman</span>
+            </a>
+        </li><!-- End Blank Page Nav -->
+
+        <li class="nav-heading">end</li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="<?= base_url('autentifikasi/logout'); ?>" data-toggle="modal" data-target="#logoutModal">
+                <i class="bi bi-box-arrow-in-right"></i>
+                <span>LOGOUT</span>
+            </a>
+        </li><!-- End-->
 
 
+    </ul>
 
-            <!-- Looping Menu-->
-            <div class="sidebar-heading">
-                Home
-            </div>
-            <li class="nav-item active">
-                <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('admin'); ?>">
-                    <i class="fa fa-th-large" aria-hidden="true" style="color: black"></i>
-                    <span>Dashboard</span></a>
-            </li>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider mt-3">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Master Data
-            </div>
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('buku/kategori'); ?>">
-                    <i class="fa fa-list-alt" aria-hidden="true" style="color: black"></i>
-                    <span>Kategori Buku</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('buku'); ?>">
-                    <i class="fa fa-book" style="color:black"></i>
-                    <span>Data Buku</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('user/anggota'); ?>">
-                    <i class="fa fa-user" style="color:black"></i>
-                    <span>Data Anggota</span></a>
-            </li>
-            <!-- Divider -->
-            <hr class="sidebar-divider mt-3">
-
-            <!-- Heading-->
-            <div class="sidebar-heading">
-                Transaksi
-            </div>
-            <li class="nav-item active">
-                <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('pinjam'); ?>">
-                    <i class="fa fa-fw fa-shopping-cart" aria-hidden="true" style="color: black"></i>
-                    <span>Data Peminjaman</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('pinjam/daftarBooking'); ?>">
-                    <i class="fa fa-fw fa-list" aria-hidden="true" style="color: black"></i>
-                    <span>Data Booking</span></a>
-            </li>
-
-
-            <!-- Divider -->
-            <hr class="sidebar-divider mt-3">
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-
-        </ul>
-        <!-- End of Sidebar --   > 
-        
-        
+</aside><!-- End Sidebar-->
+<main id="main" class="main">

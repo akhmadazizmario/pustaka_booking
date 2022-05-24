@@ -11,6 +11,11 @@
                             https://localhost/pustaka-booking.com</a><br>
                         <br><strong class="text-white">Phone: 089537897988 </strong><br>
                         <strong class="text-white">Email: aziz@gmail.com</strong><br>
+                    <div class="social-links mt-3">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    </div>
                     </p>
                 </div>
 
@@ -33,60 +38,14 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
-                    <h4 class="text-white">Social Networks</h4>
-                    <div class="social-links mt-3">
-                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                    </div>
-                </div>
-
-                <br><br><br><br>
-                <hr class="bg-white">
-                <br><br><br>
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4 class="text-white">Tentang website</h4>
-                    <div class="social-links mt-3">
-                        <p class="text-white">kami membangun website untuk memudahkan mahasiswa untuk bisa mengakses website pustaka booking dimanapun berada</p>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4 class="text-white">Platform</h4>
-                    <div class="social-links mt-3">
-                        <img src="http://localhost/pustaka-booking/assets1/img/play-store.png" width="80px" height="80px">
-                        <img src="http://localhost/pustaka-booking/assets1/img/IOS.png" width="80px" height="80px">
-                        <img src="http://localhost/pustaka-booking/assets1/img/R.jpg" width="80px" height="80px">
-                    </div>
-                </div>
-
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4 class="text-white">Maps</h4>
-                    <p class="text-white">Berikut Lokasi Google maps Universitas Bina Sarana Informatika Kampus Tegal</p>
-                    <p style="color:aqua">
-                        <i class="bx bxs-map" style="color:aqua"></i> jl.sipelem, tegal barat
-                    </p>
-                    <div class="social-links mt-3">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.219434852675!2d109.1191012188973!3d-6.8642862126725035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb7613e508bbf%3A0x29b9f43bc3956608!2sUniversitas%20Bina%20Sarana%20Informatika%20Kampus%20Tegal%20(UBSI%20Tegal)!5e0!3m2!1sid!2sid!4v1649118230363!5m2!1sid!2sid" width="270" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                            <a href="https://www.maps.ie/coordinates.html" class="text-white">find my coordinates</a>
-                        </iframe>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <center><img src="http://localhost/pustaka-booking/assets1/img/logo.png" width="120px" height="120px"></center>
+                    <h4 class="text-white">Kampus</h4>
+                    <img src="http://localhost/pustaka-booking/assets1/img/logo.png" width="120px" height="120px">
                     <div class="social-links mt-3">
                         <h4>
-                            <center>
-                                <font color="white">UNIVERSITAS BINA SARANA INFORMATIKA KAMPUS TEGAL</font>
-                            </center>
+                            <font color="white">UNIVERSITAS BINA SARANA INFORMATIKA KAMPUS TEGAL</font>
                         </h4>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
