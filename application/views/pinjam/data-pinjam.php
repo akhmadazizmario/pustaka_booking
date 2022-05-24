@@ -69,9 +69,9 @@
                                         </td>
                                         <td nowrap>
                                             <?php if ($p['status'] == "Kembali") { ?>
-                                                <i class="btn btn-sm btn-outlinesecondary"><i class="fas fa-fw fa-edit"></i>Ubah Status</i>
+                                                <i class="btn btn-sm btn-outline-secondary"><i class="bi bi-pencil-square"></i>Ubah Status</i>
                                             <?php } else { ?>
-                                                <a class="btn btn-sm btn-outlineinfo" href="<?= base_url('pinjam/ubahStatus/' . $p['id_buku'] . '/' . $p['no_pinjam']); ?>"><i class="fas fa-fw fa-edit"></i>Ubah Status</a>
+                                                <a class="btn btn-sm btn-outline-info" href="<?= base_url('pinjam/ubahStatus/' . $p['id_buku'] . '/' . $p['no_pinjam']); ?>"><i class="bi bi-pencil-square"></i>Ubah Status</a>
                                             <?php } ?>
                                         </td>
                                     </tr>

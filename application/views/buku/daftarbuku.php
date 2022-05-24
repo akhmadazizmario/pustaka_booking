@@ -116,7 +116,7 @@ if (!empty($this->session->userdata('email'))) { ?>
     <div class="container" data-aos="fade-up">
         <div class="section-title">
             <h2>Tata Cara peminjaman di Perpustakaan</h2>
-            <h3><span class="text-dark">UNIVERSITAS BINA SARANA INFORMATIKA TEGAL KAMPUS TEGAL</span></h3>
+            <h3><span class="text-dark">UNIVERSITAS BINA SARANA INFORMATIKA KAMPUS TEGAL</span></h3>
             <p class="text-white"><i class="bx bxs-map" style="color:white"></i>jl.sipelem ,kec.tegal barat, kota tegal</p>
         </div>
 
@@ -501,7 +501,7 @@ if (!empty($this->session->userdata('email'))) { ?>
 
         <div class="section-title">
             <h2>Tentang Perpustakaan</h2>
-            <h3><span class="text-white">UNIVERSITAS BINA SARANA INFORMATIKA TEGAL KAMPUS TEGAL</span></h3>
+            <h3><span class="text-white">UNIVERSITAS BINA SARANA INFORMATIKA KAMPUS TEGAL</span></h3>
             <p class="text-white"><i class="bx bxs-map" style="color:white"></i>jl.sipelem ,kec.tegal barat, kota tegal</p>
         </div>
 

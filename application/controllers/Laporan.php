@@ -50,4 +50,10 @@ class Laporan extends CI_Controller
         $this->pdf->filename = "Laporan-Dompdf-Codeigniter.pdf";
         $this->pdf->load_view('buku/laporan_pdf_buku', $data);
     }
+    public function export_excel_pinjam()
+    {
+        $data['buku'] = $this->ModelBuku->getBuku()->result_array();
+        $this->db->get('buku')->result();
+        $this->load->view('pinjam/export-excel-pinjam', $data);
+    }
 }
