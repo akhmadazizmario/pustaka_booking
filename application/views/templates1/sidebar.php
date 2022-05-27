@@ -35,7 +35,7 @@
             </a>
         </li><!-- End F.A.Q Page Nav -->
 
-        <li class="nav-heading">menu</li>
+        <li class="nav-heading">data</li>
 
         <li class="nav-item">
             <a class="nav-link collapsed" href="<?= base_url('user/anggota'); ?>">
@@ -67,12 +67,6 @@
             </a>
         </li><!-- End Error 404 Page Nav -->
 
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="<?= base_url('laporan/laporan_anggota'); ?>">
-                <i class="bi bi-clipboard"></i>
-                <span>Laporan Data Anggota</span>
-            </a>
-        </li><!-- End Blank Page Nav -->
         <li class="nav-item">
             <a class="nav-link collapsed" href="<?= base_url('laporan/laporan_pinjam'); ?>">
                 <i class="bi bi-clipboard"></i>

@@ -21,7 +21,7 @@
             <?= $this->session->flashdata('pesan'); ?>
             <a href="<?= base_url('laporan/cetak_laporan_buku'); ?>" class="btn btn-primary mb-3"><i class="bi bi-printer"></i> Print</a>
             <a href="<?= base_url('laporan/laporan_buku_pdf'); ?>" class="btn btn-warning mb-3"><i class="bi bi-file-earmark-pdf"></i> Download Pdf</a>
-            <a href="<?= base_url('laporan/export_excel_pinjam'); ?>" class="btn btn-success mb-3"><i class="bi bi-file-excel"></i> Export ke Excel</a>
+            <a href="<?= base_url('laporan/export_excel'); ?>" class="btn btn-success mb-3"><i class="bi bi-file-excel"></i> Export ke Excel</a>
             <table class="table table-hover">
                 <thead>
                     <tr>
