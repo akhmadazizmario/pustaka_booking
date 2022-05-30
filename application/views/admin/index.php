@@ -17,6 +17,9 @@
         <!-- Sales Card -->
         <div class="col-xxl-4 col-md-6">
           <div class="card info-card sales-card">
+            <div class="filter">
+              <a class="icon" href="http://localhost/pustaka-booking/buku"><i class="bi bi-arrow-right-square-fill"></i></a>
+            </div>
             <div class="card-body">
               <h5 class="card-title">Daftar Stok buku <span>|</span></h5>
 
@@ -39,6 +42,9 @@
         </div><!-- End Sales Card -->
         <div class="col-xxl-4 col-md-6">
           <div class="card info-card sales-card">
+            <div class="filter">
+              <a class="icon" href="http://localhost/pustaka-booking/pinjam"><i class="bi bi-arrow-right-square-fill"></i></a>
+            </div>
             <div class="card-body">
               <h5 class="card-title">buku dipinjam <span>|</span></h5>
 
@@ -47,11 +53,7 @@
                   <i class="bi bi-journal-bookmark"></i>
                 </div>
                 <div class="ps-3">
-                  <h6><?php
-                      $where = ['dipinjam != 0'];
-                      $totaldipinjam = $this->ModelBuku->total('dipinjam', $where);
-                      echo $totaldipinjam;
-                      ?></h6>
+                  <h6><?= $this->ModelPinjam->getUserPinjam(['no_pinjam'])->num_rows(); ?></h6>
                   <span class="text-danger small pt-1 fw-bold">buku</span>
                 </div>
               </div>
@@ -61,19 +63,17 @@
         </div><!-- End Sales Card -->
         <div class="col-xxl-4 col-md-6">
           <div class="card info-card sales-card">
+            <div class="filter">
+              <a class="icon" href="http://localhost/pustaka-booking/pinjam/bookingDetail"><i class="bi bi-arrow-right-square-fill"></i></a>
+            </div>
             <div class="card-body">
               <h5 class="card-title">buku dibooking <span>|</span></h5>
-
               <div class="d-flex align-items-center">
                 <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                   <i class="bi bi bi-cart-check"></i>
                 </div>
                 <div class="ps-3">
-                  <h6><?php
-                      $where = ['dibooking !=0'];
-                      $totaldibooking = $this->ModelBuku->total('dibooking', $where);
-                      echo $totaldibooking;
-                      ?></h6>
+                  <h6><?= $this->ModelBooking->getUserBooking(['id'])->num_rows(); ?></h6>
                   <span class="text-danger small pt-1 fw-bold">buku</span>
                 </div>
               </div>

@@ -205,7 +205,7 @@ if (!empty($this->session->userdata('email'))) { ?>
     <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-            <h2>TOTAL COST</h2>
+            <h2>TOTAL REPORT</h2>
             <p>banyak beberapa buku yang ada di perpustakaan, dimana teman-teman mahasiswa bisa memilih buku yang disuka. berikut total-total perkiraan buku di perpustakaan universitas bina sarana informatika kampus tegal</p>
         </div>
 
@@ -214,15 +214,19 @@ if (!empty($this->session->userdata('email'))) { ?>
             <div class="col-lg-3 col-md-6">
                 <div class="count-box">
                     <i class="bx bx-male"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="400" data-purecounter-duration="1" class="purecounter"></span>
-                    <p>MAHASISWA</p>
+                    <span><?= $this->ModelUser->getUserWhere(['role_id'])->num_rows(); ?></span>
+                    <p>Pengguna</p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
                 <div class="count-box">
                     <i class="bx bx-food-menu"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="1" class="purecounter"></span>
+                    <span><?php
+                            $where = ['stok != 0'];
+                            $totalstok = $this->ModelBuku->total('stok', $where);
+                            echo $totalstok;
+                            ?></span>
                     <p>BUKU</p>
                 </div>
             </div>
@@ -230,7 +234,7 @@ if (!empty($this->session->userdata('email'))) { ?>
             <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
                 <div class="count-box">
                     <i class="bx bx-server"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+                    <span><?= $this->ModelPinjam->getUserPinjam(['no_pinjam'])->num_rows(); ?></span>
                     <p>Dipinjam</p>
                 </div>
             </div>
@@ -238,7 +242,7 @@ if (!empty($this->session->userdata('email'))) { ?>
             <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
                 <div class="count-box">
                     <i class="bx bx-sitemap"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
+                    <span><?= $this->ModelPinjam->getUserKategori(['id'])->num_rows(); ?></span>
                     <p>kategori buku</p>
                 </div>
             </div>
@@ -282,11 +286,14 @@ if (!empty($this->session->userdata('email'))) { ?>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <img src="http://localhost/pustaka-booking/assets1/img/buku3.jpg.crdownload" class="img-fluid" alt="">
+                <img src="http://localhost/pustaka-booking/assets1/img/buku5.jpg" class="img-fluid" alt="">
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                 <img src="http://localhost/pustaka-booking/assets1/img/buku4.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <img src="http://localhost/pustaka-booking/assets1/img/buju.jpg" class="img-fluid" alt="">
             </div>
 
         </div>
@@ -542,7 +549,7 @@ if (!empty($this->session->userdata('email'))) { ?>
 </section><!-- End About Section -->
 
 <!-- ======= Contact Section ======= -->
-<section id="contact" class="contact bg-info">
+<section id="contact" class="testimonials section-bg-white">
     <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -554,21 +561,21 @@ if (!empty($this->session->userdata('email'))) { ?>
             <div class="col-lg-4">
                 <div class="info">
                     <div class="address">
-                        <i class="bi bi-geo-alt"></i>
-                        <h4>Location:</h4>
-                        <p>A108 Adam Street, New York, NY 535022</p>
+                        <i class="bi bi-map"></i>
+                        <h4 class="text-white">Location:</h4>
+                        <p class="text-white">jl.sipelem kota tegal</p>
                     </div>
 
                     <div class="email">
                         <i class="bi bi-envelope"></i>
-                        <h4>Email:</h4>
-                        <p>info@example.com</p>
+                        <h4 class="text-white">Email:</h4>
+                        <p class="text-white">ubsitegal@gmail.com</p>
                     </div>
 
                     <div class="phone">
                         <i class="bi bi-phone"></i>
-                        <h4>Call:</h4>
-                        <p>+1 5589 55488 55s</p>
+                        <h4 class="text-white">Call:</h4>
+                        <p class="text-white">+62 xxxx xxxx xxx</p>
                     </div>
 
                 </div>
@@ -577,13 +584,13 @@ if (!empty($this->session->userdata('email'))) { ?>
 
             <div class="col-lg-8 mt-5 mt-lg-0">
 
-                <form action="" method="post" role="form" class="php-email-form bg-light">
+                <form action="" method="post" role="form" class="php-email-form">
                     <div class="row">
                         <div class="col-md-6 form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Nama kamu" required>
                         </div>
                         <div class="col-md-6 form-group mt-3 mt-md-0">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email kamu" required>
                         </div>
                     </div>
                     <div class="form-group mt-3">
@@ -593,9 +600,9 @@ if (!empty($this->session->userdata('email'))) { ?>
                         <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                     </div>
                     <div class="my-3">
-                        <div class="loading">Loading</div>
+                        <div class="loading text-white">Loading</div>
                         <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                        <div class="sent-message text-white">Your message has been sent. Thank you!</div>
                     </div>
                     <div class="text-center"><button class="bg-success" type="submit">Send Message</button></div>
                 </form>

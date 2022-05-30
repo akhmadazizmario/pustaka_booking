@@ -11,11 +11,11 @@
             <?= $this->session->flashdata('pesan'); ?>
             <?php foreach ($buku as $b) { ?>
                 <form action="<?= base_url('buku/ubahBuku'); ?>" method="post" enctype="multipart/form-data">
-                    <div class="form-group">
+                    <div class="form-group"> judul buku:
                         <input type="hidden" name="id" id="id" value="<?php echo $b['id']; ?>">
                         <input type="text" class="form-control form-control-user" id="judul_buku" name="judul_buku" placeholder="Masukkan Judul Buku" value="<?= $b['judul_buku']; ?>">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"> kategori:
                         <select name="id_kategori" class="form-control form-control-user">
                             <option value="<?= $id; ?>" selected="selected"><?= $k; ?></option>
                             <?php
@@ -24,13 +24,13 @@
                             <?php } ?>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"> pengarang :
                         <input type="text" class="form-control form-control-user" id="pengarang" name="pengarang" placeholder="Masukkan nama pengarang" value="<?= $b['pengarang']; ?>">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"> penerbit :
                         <input type="text" class="form-control form-control-user" id="penerbit" name="penerbit" placeholder="Masukkan nama penerbit" value="<?= $b['penerbit']; ?>">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"> tahun_terbit :
                         <select name="tahun" class="form-control form-control-user">
                             <option value="<?= $b['tahun_terbit']; ?>"><?= $b['tahun_terbit']; ?></option>
                             <?php
@@ -39,13 +39,13 @@
                             <?php } ?>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"> isbn :
                         <input type="text" class="form-control form-control-user" id="isbn" name="isbn" placeholder="Masukkan ISBN" value="<?= $b['isbn']; ?>">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"> stok :
                         <input type="text" class="form-control form-control-user" id="stok" name="stok" placeholder="Masukkan nominal stok" value="<?= $b['stok']; ?>">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"> gambar :
                         <?php
                         if (isset($b['image'])) { ?>
 

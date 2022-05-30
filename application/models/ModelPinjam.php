@@ -32,4 +32,12 @@ class ModelPinjam extends CI_Model
         $sql = "INSERT INTO detail_pinjam (no_pinjam,id_buku) SELECT pinjam.no_pinjam,booking_detail.id_buku FROM pinjam, booking_detail WHERE booking_detail.id_booking=$idbooking AND pinjam.no_pinjam='$nopinjam'";
         $this->db->query($sql);
     }
+    public function getUserPinjam($where = null)
+    {
+        return $this->db->get_where('detail_pinjam', $where);
+    }
+    public function getUserKategori($where = null)
+    {
+        return $this->db->get_where('kategori', $where);
+    }
 }
