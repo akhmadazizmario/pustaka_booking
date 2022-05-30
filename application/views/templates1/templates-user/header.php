@@ -37,7 +37,6 @@
 </head>
 
 <body>
-
     <!-- ======= Top Bar ======= -->
     <section id="topbar" class="d-flex align-items-center">
         <div class="container d-flex justify-content-center justify-content-md-between">
@@ -61,7 +60,6 @@
             <h1 class="logo"><a href="<?= base_url(); ?>">Pustaka<span class="sr-only"></span></a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
-
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-item nav-link active" href="<?= base_url(); ?>">Beranda <span class="sr-only"></span></a></li>
@@ -77,6 +75,8 @@
                         <li><a class="nav-item nav-link" data-toggle="modal" data-target="#loginModal" href="<?= base_url('autentifikasi'); ?>"> Log in</a></li>
                     <?php } ?>
                     <li><span class="nav-item nav-link nav-right" style="display:block; margin-left:20px;">Selamat Datang <b><?= $user; ?></b></span></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
 
         </div>

@@ -1,45 +1,41 @@
-<div class="container">
-
-    <!-- Outer Row -->
-    <div class="row justify-content-center">
-
-        <div class="col-lg-7">
-
-            <div class="card o-hidden border-0 shadow-lg my-5">
-                <div class="card-body p-0">
-                    <!-- Nested Row within Card Body -->
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="p-5">
-                                <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-4">Halaman Login!!</h1>
-                                </div>
-                                <?= $this->session->flashdata('pesan'); ?>
-                                <form class="user" method="post" action="<?= base_url('autentifikasi'); ?>">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control form-control-user" value="<?= set_value('email'); ?>" id="email" placeholder="Masukkan Alamat Email" name="email">
-                                        <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control form-control-user" id="password" placeholder="Password" name="password">
-                                        <?= form_error('password', '<small class="text-danger pl-3">', '</small>'); ?>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary btn-user btn-block">
-                                        Masuk
-                                    </button>
-                                </form>
-                                <hr>
-                                <div class="text-center">
-                                    <a class="small" href="<?= base_url('home'); ?>">kembali ke beranda</a>
-                                </div>
-                            </div>
+<br><br><br><br><br>
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="http://localhost/pustaka-booking/assets2/images/Untitled2.jpg" alt="Image" class="img-fluid">
+                <hr>
+            </div>
+            <div class="col-md-6 contents">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="mb-4">
+                            <center><img src="http://localhost/pustaka-booking/assets2/images/Untitled4.jpg" width="340px" height="100px"></center>
                         </div>
+                        <hr>
+                        <?= $this->session->flashdata('pesan'); ?>
+                        <form action="<?= base_url('autentifikasi'); ?>" method="post">
+                            <div class="form-group">Email :
+                                <input type="text" class="form-control form-control-user" value="<?= set_value('email'); ?>" id="email" placeholder="Masukkan Alamat Email" name="email">
+                                <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
+                            </div>
+                            <div class="form-group">password :
+                                <input type="password" class="form-control form-control-user" id="password" placeholder="Password" name="password">
+                                <?= form_error('password', '<small class="text-danger pl-3">', '</small>'); ?>
+                            </div>
+
+                            <div class="d-flex mb-5 align-items-center">
+                                <input type="submit" value="Log In" class="btn btn-block btn-primary">
+
+                            </div>
+                            <span class="ml-auto"><a href="http://localhost/pustaka-booking/views/autentifikasi/login" class="forgot-pass">Lupa Password?</a></span>
+                            <span class="d-block text-left my-4 text-muted">&copy; Copyright <strong><span>2022</span></strong>. All Rights Reserved</span>
+                        </form>
                     </div>
                 </div>
+
             </div>
 
         </div>
-
     </div>
-
 </div>

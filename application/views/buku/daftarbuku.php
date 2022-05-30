@@ -395,25 +395,26 @@ if (!empty($this->session->userdata('email'))) { ?>
                         <!-- looping products -->
                         <?php foreach ($buku as $buku) { ?>
                             <div class="col-md-2 col-md-3">
-                                <div class="icon-box " style="height: 450px;">
+                                <div class="icon-box " style="height: 400px;">
                                     <!--daftarbuku-->
-                                    <img src="<?php echo base_url(); ?>assets/img/upload/<?= $buku->image; ?>" style="max-width:100%; max-height: 100%; height: 200px; width: 180px">
-                                    <div class="caption">
-                                        <h5 style="min-height:30px;" class="description "><?= $buku->pengarang ?></h5>
-                                        <h5 class="description "><?= $buku->penerbit ?></h5>
-                                        <h5 class="description "><?= substr($buku->tahun_terbit, 0, 4) ?></h5>
-                                        <p>
-                                            <?php
-                                            if ($buku->stok < 1) {
-                                                echo "<i class='btn btn-warning fas fw fa-shopping-cart description'> Booking&nbsp;&nbsp 0</i>";
-                                            } else {
-                                                echo "<a class='btn btn-warning fas fw fa-shopping-cart description' href='" . base_url('booking/tambahBooking/' . $buku->id) . "'> Booking</a>";
-                                            }
-                                            ?>
-                                            <a class="btn btn-danger fas fw fa-search description" href="<?= base_url('home/detailBuku/' . $buku->id); ?>"> Detail</a>
-                                        </p>
-                                    </div>
-
+                                    <center>
+                                        <img src="<?php echo base_url(); ?>assets/img/upload/<?= $buku->image; ?>" style="max-width:100%; max-height: 100%; height: 200px; width: 180px">
+                                        <div class="caption">
+                                            <h5 style="min-height:30px;" class="description "><?= $buku->pengarang ?></h5>
+                                            <h5 class="description "><?= $buku->penerbit ?></h5>
+                                            <h5 class="description "><?= substr($buku->tahun_terbit, 0, 4) ?></h5>
+                                            <p>
+                                                <?php
+                                                if ($buku->stok < 1) {
+                                                    echo "<i class='btn btn-warning fas fw fa-shopping-cart description'> Booking&nbsp;&nbsp 0</i>";
+                                                } else {
+                                                    echo "<a class='btn btn-warning fas fw fa-shopping-cart description' href='" . base_url('booking/tambahBooking/' . $buku->id) . "'> Booking</a>";
+                                                }
+                                                ?>
+                                                <a class="btn btn-danger fas fw fa-search description" href="<?= base_url('home/detailBuku/' . $buku->id); ?>"> Detail</a>
+                                            </p>
+                                        </div>
+                                    </center>
                                 </div><br><br>
                             </div>
                         <?php } ?>
