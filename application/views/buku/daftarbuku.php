@@ -210,9 +210,9 @@ if (!empty($this->session->userdata('email'))) { ?>
             <section id="about" class="about section-bg bg-white" style="background-image: url('http://localhost/pustaka-booking/assets1/img/3.png');">
                 <div class="container" data-aos="fade-up">
                     <div class="section-title">
-                        <h2>Tata Cara peminjaman di Perpustakaan</h2>
-                        <h3><span class="text-dark">UNIVERSITAS BINA SARANA INFORMATIKA KAMPUS TEGAL</span></h3>
-                        <p class="text-dark"><i class="bx bxs-map" style="color:black"></i>jl.sipelem ,kec.tegal barat, kota tegal</p>
+                        <h2>Tata Cara peminjaman </h2>
+                        <h3><span class="text-dark">PERPUSTAKAAN BOOKING </span></h3>
+                        <p class="text-dark"><i class="bx bxs-map" style="color:black"></i>Tegal</p>
                     </div>
 
                     <div class="row">

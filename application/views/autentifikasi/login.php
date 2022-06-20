@@ -1,9 +1,9 @@
-<div class="content">
+<div class="content" style="background-image: url('http://localhost/pustaka-booking/assets1/img/3.png');">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="http://localhost/pustaka-booking/assets2/images/Untitled2.jpg" alt="Image" class="img-fluid">
-                <hr>
+                <img src="http://localhost/pustaka-booking/assets/img/undraw_posting_photo.svg" alt="Image" class="img-fluid">
+
             </div>
             <div class="col-md-6 contents">
                 <div class="row justify-content-center">
