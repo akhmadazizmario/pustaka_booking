@@ -25,8 +25,8 @@
     }
 
     .pullbar {
-        border-bottom: 40px solid blue;
-        border-top: 40px solid blue;
+        border-bottom: 40px solid white;
+        border-top: 40px solid white;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -35,7 +35,7 @@
 
     p {
         text-align: center;
-        border: 1px solid yellow;
+        border: 1px solid black;
         color: white;
         font-size: 20px;
         margin: auto;
@@ -116,7 +116,9 @@
     </table>
     <br>
     <div class="pullbar">
-        <p>TERIMA KASIH & SELAMAT BELAJAR :) </p>
+        <p>
+            <font color="black">TERIMA KASIH & SELAMAT BELAJAR :)</font>
+        </p>
     </div>
 
 </div>

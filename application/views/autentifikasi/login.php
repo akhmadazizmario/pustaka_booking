@@ -1,4 +1,3 @@
-<br><br><br><br><br>
 <div class="content">
     <div class="container">
         <div class="row">
@@ -14,16 +13,16 @@
                         </div>
                         <hr>
                         <?= $this->session->flashdata('pesan'); ?>
-                        <form action="<?= base_url('autentifikasi'); ?>" method="post">
-                            <div class="form-group">Email :
-                                <input type="text" class="form-control form-control-user" value="<?= set_value('email'); ?>" id="email" placeholder="Masukkan Alamat Email" name="email">
+                        <form action="<?= base_url('autentifikasi'); ?>" method="post" class="bg-white">
+                            <div class="form-group bg-white">Email :
+                                <input type="text" class="form-control form-control-user bg-light" value="<?= set_value('email'); ?>" id="email" placeholder=" Masukkan Alamat Email" name="email">
                                 <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
                             </div>
-                            <div class="form-group">password :
-                                <input type="password" class="form-control form-control-user" id="password" placeholder="Password" name="password">
+                            <div class="form-group bg-white">password :
+                                <input type="password" class="form-control form-control-user bg-light" id="password" placeholder=" Masukkan Password" name="password">
                                 <?= form_error('password', '<small class="text-danger pl-3">', '</small>'); ?>
                             </div>
-
+                            <br>
                             <div class="d-flex mb-5 align-items-center">
                                 <input type="submit" value="Log In" class="btn btn-block btn-primary">
 

@@ -20,4 +20,4 @@
     <title>Login #7</title>
 </head>
 
-<body>
+<body class="bg-white">

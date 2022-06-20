@@ -22,7 +22,7 @@
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4 class="text-white">Useful Links</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right text-white"></i> <a class="text-white" href="#">Beranda</a></li>
+                        <li><i class="bx bx-chevron-right text-white"></i> <a class="text-white" href="http://localhost/pustaka-booking/">Beranda</a></li>
                         <li><i class="bx bx-chevron-right text-white"></i> <a class="text-white" href="#">About us</a></li>
                         <li><i class="bx bx-chevron-right text-white"></i> <a class="text-white" href="#">Privacy policy</a></li>
                     </ul>
