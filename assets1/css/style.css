@@ -397,7 +397,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 75vh;
-  background-image: url("http://localhost/pustaka-booking/assets1/img/background.jpg");
+  background-image: url("<?php echo base_url() ?>assets1/img/background.jpg");
   background-size: cover;
   position: relative;
 }

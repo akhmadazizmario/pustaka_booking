@@ -1,15 +1,15 @@
-<div class="content" style="background-image: url('http://localhost/pustaka-booking/assets1/img/3.png');">
+<div class="content" style="background-image: url('<?php echo base_url() ?>assets1/img/3.png');">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="http://localhost/pustaka-booking/assets/img/undraw_posting_photo.svg" alt="Image" class="img-fluid">
+                <img src="<?php echo base_url() ?>assets/img/undraw_posting_photo.svg" alt="Image" class="img-fluid">
 
             </div>
             <div class="col-md-6 contents">
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <div class="mb-4">
-                            <center><img src="http://localhost/pustaka-booking/assets2/images/Untitled4.jpg" width="340px" height="100px"></center>
+                            <center><img src="<?php echo base_url() ?>assets2/images/Untitled4.jpg" width="340px" height="100px"></center>
                         </div>
                         <hr>
                         <?= $this->session->flashdata('pesan'); ?>
@@ -27,7 +27,7 @@
                                 <input type="submit" value="Log In" class="btn btn-block btn-primary">
 
                             </div>
-                            <span class="ml-auto"><a href="http://localhost/pustaka-booking/views/autentifikasi/login" class="forgot-pass">Lupa Password?</a></span>
+                            <span class="ml-auto"><a href="<?php echo base_url() ?>views/autentifikasi/login" class="forgot-pass">Lupa Password?</a></span>
                             <span class="d-block text-left my-4 text-muted">&copy; Copyright <strong><span>2022</span></strong>. All Rights Reserved</span>
                         </form>
                     </div>

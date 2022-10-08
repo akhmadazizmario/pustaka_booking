@@ -18,7 +18,7 @@
         <div class="col-xxl-4 col-md-6">
           <div class="card info-card sales-card">
             <div class="filter">
-              <a class="icon" href="http://localhost/pustaka-booking/buku"><i class="bi bi-arrow-right-square-fill"></i></a>
+              <a class="icon" href="<?php echo base_url() ?>pustaka-booking/buku"><i class="bi bi-arrow-right-square-fill"></i></a>
             </div>
             <div class="card-body">
               <h5 class="card-title">Daftar Stok buku <span>|</span></h5>
@@ -43,7 +43,7 @@
         <div class="col-xxl-4 col-md-6">
           <div class="card info-card sales-card">
             <div class="filter">
-              <a class="icon" href="http://localhost/pustaka-booking/pinjam"><i class="bi bi-arrow-right-square-fill"></i></a>
+              <a class="icon" href="<?php echo base_url() ?>pustaka-booking/pinjam"><i class="bi bi-arrow-right-square-fill"></i></a>
             </div>
             <div class="card-body">
               <h5 class="card-title">buku dipinjam <span>|</span></h5>
@@ -64,7 +64,7 @@
         <div class="col-xxl-4 col-md-6">
           <div class="card info-card sales-card">
             <div class="filter">
-              <a class="icon" href="http://localhost/pustaka-booking/pinjam/bookingDetail"><i class="bi bi-arrow-right-square-fill"></i></a>
+              <a class="icon" href="<?php echo base_url() ?>pustaka-booking/pinjam/bookingDetail"><i class="bi bi-arrow-right-square-fill"></i></a>
             </div>
             <div class="card-body">
               <h5 class="card-title">buku dibooking <span>|</span></h5>
@@ -170,7 +170,7 @@
 
           <div class="activity">
 
-            <img src="http://localhost/pustaka-booking/assets1/img/logo.png" width="327px" height="300px">
+            <img src="<?php echo base_url() ?>pustaka-booking/assets1/img/logo.png" width="327px" height="300px">
 
           </div>
 

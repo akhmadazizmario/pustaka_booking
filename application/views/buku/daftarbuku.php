@@ -1,5 +1,5 @@
 <!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex align-items-center" style="background-image: url('http://localhost/pustaka-booking/assets1/img/banner_4_2.jpg');">
+<section id="hero" class="d-flex align-items-center" style="background-image: url('<?php echo base_url() ?>assets1/img/banner_4_2.jpg');">
     <div class="container">
         <h1><span class="bg-danger text-white">Welcome to </span><span class="bg-white text-dark">| PUSTAKA-BOOKING</span></h1>
         <h2><span class="bg-warning text-dark">Website aplikasi pustaka untuk mahasiswa </span></h2>
@@ -207,7 +207,7 @@ if (!empty($this->session->userdata('email'))) { ?>
 <div class="col-12">
     <div class="card recent-sales overflow-auto">
         <div class="card-body info-card sales-card">
-            <section id="about" class="about section-bg bg-white" style="background-image: url('http://localhost/pustaka-booking/assets1/img/3.png');">
+            <section id="about" class="about section-bg bg-white" style="background-image: url('<?php echo base_url() ?>assets1/img/3.png');">
                 <div class="container" data-aos="fade-up">
                     <div class="section-title">
                         <h2>Tata Cara peminjaman </h2>
@@ -217,7 +217,7 @@ if (!empty($this->session->userdata('email'))) { ?>
 
                     <div class="row">
                         <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                            <img src="http://localhost/pustaka-booking/assets/img/undraw_posting_photo.svg" class="img-fluid" alt="">
+                            <img src="h<?php echo base_url() ?>assets/img/undraw_posting_photo.svg" class="img-fluid" alt="">
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
                             <div class="row">
@@ -424,7 +424,7 @@ if (!empty($this->session->userdata('email'))) { ?>
 <div class="col-12">
     <div class="card recent-sales overflow-auto">
         <div class="card-body info-card sales-card">
-            <link href="http://localhost/pustaka-booking/assets/css/style1.css" rel="stylesheet" type="text/css">
+            <link href="<?php echo base_url() ?>assets/css/style1.css" rel="stylesheet" type="text/css">
             <section id="testimonials" class="testimonials section-bg-white">
                 <div class="container" data-aos="fade-up">
 
@@ -437,7 +437,7 @@ if (!empty($this->session->userdata('email'))) { ?>
 
                             <div class="swiper-slide">
                                 <div class="testimonial-item">
-                                    <img src="http://localhost/pustaka-booking/assets1/img/th.jpg" class="testimonial-img" alt="">
+                                    <img src="<?php echo base_url() ?>assets1/img/th.jpg" class="testimonial-img" alt="">
                                     <h3 class="text-white">AZIZ MARIO</h3>
                                     <h4>Mahasiswa ubsi d3 sistem informasi</h4>
                                     <p>
@@ -450,7 +450,7 @@ if (!empty($this->session->userdata('email'))) { ?>
 
                             <div class="swiper-slide">
                                 <div class="testimonial-item">
-                                    <img src="http://localhost/pustaka-booking/assets1/img/th.jpg" class="testimonial-img" alt="">
+                                    <img src="<?php echo base_url() ?>assets1/img/th.jpg" class="testimonial-img" alt="">
                                     <h3 class="text-white">AZIZ MARIO</h3>
                                     <h4>Mahasiswa</h4>
                                     <p>
@@ -463,7 +463,7 @@ if (!empty($this->session->userdata('email'))) { ?>
 
                             <div class="swiper-slide">
                                 <div class="testimonial-item">
-                                    <img src="http://localhost/pustaka-booking/assets1/img/th.jpg" class="testimonial-img" alt="">
+                                    <img src="<?php echo base_url() ?>assets1/img/th.jpg" class="testimonial-img" alt="">
                                     <h3 class="text-white">naruto</h3>
                                     <h4>Ninja konoha</h4>
                                     <p>
@@ -476,7 +476,7 @@ if (!empty($this->session->userdata('email'))) { ?>
 
                             <div class="swiper-slide">
                                 <div class="testimonial-item">
-                                    <img src="http://localhost/pustaka-booking/assets1/img/th.jpg" class="testimonial-img" alt="">
+                                    <img src="<?php echo base_url() ?>assets1/img/th.jpg" class="testimonial-img" alt="">
                                     <h3 class="text-white">sasuke</h3>
                                     <h4>Freelancer</h4>
                                     <p>
@@ -498,7 +498,7 @@ if (!empty($this->session->userdata('email'))) { ?>
 </div><!-- End Testimonials Section -->
 
 <!-- ======= Portfolio Section ======= -->
-<link href="http://localhost/pustaka-booking/assets/css/style1.css" rel="stylesheet" type="text/css">
+<link href="<?php echo base_url() ?>assets/css/style1.css" rel="stylesheet" type="text/css">
 <div class="col-12">
     <div class="card recent-sales overflow-auto">
         <div class="card-body info-card sales-card">
@@ -522,22 +522,22 @@ if (!empty($this->session->userdata('email'))) { ?>
 
                     <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
                         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <img src="http://localhost/pustaka-booking/assets1/img/buku1.jpg" class="img-fluid" alt="">
+                            <img src="<?php echo base_url() ?>assets1/img/buku1.jpg" class="img-fluid" alt="">
                         </div>
 
                         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                            <img src="http://localhost/pustaka-booking/assets1/img/buku2.jpeg" class="img-fluid" alt="">
+                            <img src="<?php echo base_url() ?>assets1/img/buku2.jpeg" class="img-fluid" alt="">
                         </div>
 
                         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                            <img src="http://localhost/pustaka-booking/assets1/img/buku5.jpg" class="img-fluid" alt="">
+                            <img src="<?php echo base_url() ?>assets1/img/buku5.jpg" class="img-fluid" alt="">
                         </div>
 
                         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <img src="http://localhost/pustaka-booking/assets1/img/buku4.jpg" class="img-fluid" alt="">
+                            <img src="<?php echo base_url() ?>assets1/img/buku4.jpg" class="img-fluid" alt="">
                         </div>
                         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                            <img src="http://localhost/pustaka-booking/assets1/img/buju.jpg" class="img-fluid" alt="">
+                            <img src="<?php echo base_url() ?>assets1/img/buju.jpg" class="img-fluid" alt="">
                         </div>
 
                     </div>
@@ -550,14 +550,14 @@ if (!empty($this->session->userdata('email'))) { ?>
 <div class="col-12">
     <div class="card recent-sales overflow-auto">
         <div class="card-body info-card sales-card">
-            <section id="about" class="d-flex align-items-center" style="background-image: url('http://localhost/pustaka-booking/assets1/img/c3.jpg');">
+            <section id="about" class="d-flex align-items-center" style="background-image: url('<?php echo base_url() ?>assets1/img/c3.jpg');">
                 <div class="container" data-aos="fade-up">
                     <div class="section-title">
                         <h2 class="text-dark">MEMBACA</h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                            <img src="http://localhost/pustaka-booking/assets1/img/t.jpg" height="380px" width="630px">
+                            <img src="<?php echo base_url() ?>assets1/img/t.jpg" height="380px" width="630px">
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
                             <h3 class="text-dark">MEMBACA BUKU</h3>
@@ -598,7 +598,7 @@ if (!empty($this->session->userdata('email'))) { ?>
 
                     <div class="row">
                         <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                            <img src="http://localhost/pustaka-booking/assets1/img/bsi.jpeg" class="img-fluid" alt="">
+                            <img src="<?php echo base_url() ?>assets1/img/bsi.jpeg" class="img-fluid" alt="">
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
                             <h3>PUSTAKA-BOOKING</h3>
@@ -725,7 +725,7 @@ if (!empty($this->session->userdata('email'))) { ?>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <img src="http://localhost/pustaka-booking/assets1/img/th.jpg" class="testimonial-img" alt="">
+                            <img src="<?php echo base_url() ?>assets1/img/th.jpg" class="testimonial-img" alt="">
                             <h3 class="text-dark">AKHMAD AZIZ MARIO</h3>
                             <h4>Mahasiswa ubsi D3 sistem informasi</h4>
                             <p>

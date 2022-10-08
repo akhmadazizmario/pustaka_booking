@@ -106,7 +106,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                            <img src="http://localhost/pustaka-booking/assets1/img/b1.jpg" height="380px" width="630px">
+                            <img src="<?php echo base_url() ?>assets1/img/b1.jpg" height="380px" width="630px">
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
                             <h3 class="text-dark">MEMBACA BUKU</h3>
@@ -142,7 +142,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                            <img src="http://localhost/pustaka-booking/assets1/img/buku1.jpg" height="380px" width="630px">
+                            <img src="<?php echo base_url() ?>assets1/img/buku1.jpg" height="380px" width="630px">
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
                             <h3 class="text-dark">PERPUSTAKAAN</h3>
@@ -170,7 +170,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                            <img src="http://localhost/pustaka-booking/assets1/img/ticket.jpg" height="380px" width="630px">
+                            <img src="<?php echo base_url() ?>assets1/img/ticket.jpg" height="380px" width="630px">
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
                             <h3 class="text-dark">TIKET MENUJU SUKSES</h3>

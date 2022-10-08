@@ -99,7 +99,7 @@
 <div class="col-12">
     <div class="card recent-sales overflow-auto">
         <div class="card-body info-card sales-card">
-            <section id="about" class="about section-bg bg-white" style="background-image: url('http://localhost/pustaka-booking/assets1/img/3.png');">
+            <section id="about" class="about section-bg bg-white" style="background-image: url('<?php echo base_url() ?>assets1/img/3.png');">
                 <div class="container" data-aos="fade-up">
                     <div class="section-title">
                         <h2>PERSYARATAN PEMINJAMAN</h2>
@@ -107,7 +107,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                            <img src="http://localhost/pustaka-booking/assets/img/undraw_posting_photo.svg" class="img-fluid" alt="">
+                            <img src="<?php echo base_url() ?>assets/img/undraw_posting_photo.svg" class="img-fluid" alt="">
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
                             <div class="row">

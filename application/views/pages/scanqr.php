@@ -101,7 +101,7 @@
         <div class="card-body info-card sales-card">
             <section>
                 <center>
-                    <img src="http://localhost/pustaka-booking/assets1/img/ticket.jpg">
+                    <img src="<?php echo base_url() ?>assets1/img/ticket.jpg">
                 </center>
             </section>
         </div>
